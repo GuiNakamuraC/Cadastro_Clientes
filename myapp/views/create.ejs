@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adicionar Cliente</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <h1>Adicionar Cliente</h1>
+    <form action="/create" method="post">
+        <label>Nome:</label>
+        <input type="text" name="name" required>
+        <br>
+        <label>Data de Nascimento:</label>
+        <input type="date" name="dob" required>
+        <br>
+        <label>Gênero:</label>
+        <select name="gender" required>
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+        </select>
+        <br>
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        <br>
+        <label>Contato:</label>
+        <input type="text" name="contact" required>
+        <br>
+        <button type="submit">Salvar</button>
+    </form>
+    <a href="/">Voltar</a>
+</body>
+</html>

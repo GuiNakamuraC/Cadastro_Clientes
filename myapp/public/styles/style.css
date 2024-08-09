@@ -1,0 +1,125 @@
+/* Reset básico para evitar diferenças entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+h1 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Adiciona margem ao botão "Adicionar Novo Cliente" */
+.add-client-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-bottom: 20px; /* Adiciona espaço abaixo do botão */
+}
+
+.add-client-button:hover {
+    background-color: #45a049;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Estilo para os botões dentro da lista */
+.button-container {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.button-container a {
+    display: inline-block;
+    margin-left: 5px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+}
+
+.button-container .edit-button {
+    background-color: #4CAF50; /* Azul para o botão de editar */
+}
+
+.button-container .delete-button {
+    background-color: #f44336; /* Vermelho para o botão de excluir */
+}
+
+.button-container .edit-button:hover {
+    background-color: #409642;
+}
+
+.button-container .delete-button:hover {
+    background-color: #d32f2f;
+}

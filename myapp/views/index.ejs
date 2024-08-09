@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clientes</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <h1>Clientes</h1>
+    <a href="/create" class="add-client-button">Adicionar Novo Cliente</a>
+    <ul>
+        <% clients.forEach(client => { %>
+            <li>
+                <%= client.name %> - <%= client.email %>
+                <div class="button-container">
+                    <a href="/edit/<%= client.id %>" class="edit-button">Editar</a>
+                    <a href="/delete/<%= client.id %>" class="delete-button" onclick="return confirm('Você tem certeza?')">Excluir</a>
+                </div>
+            </li>
+        <% }) %>
+    </ul>
+</body>
+</html>

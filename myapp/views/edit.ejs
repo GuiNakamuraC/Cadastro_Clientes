@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Editar Cliente</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <h1>Editar Cliente</h1>
+    <form action="/edit/<%= client.id %>" method="post">
+        <label>Nome:</label>
+        <input type="text" name="name" value="<%= client.name %>" required>
+        <br>
+        <label>Data de Nascimento:</label>
+        <input type="date" name="dob" value="<%= client.dob %>" required>
+        <br>
+        <label>Gênero:</label>
+        <select name="gender" required>
+            <option value="M" <%= client.gender === 'M' ? 'selected' : '' %>>Masculino</option>
+            <option value="F" <%= client.gender === 'F' ? 'selected' : '' %>>Feminino</option>
+        </select>
+        <br>
+        <label>Email:</label>
+        <input type="email" name="email" value="<%= client.email %>" required>
+        <br>
+        <label>Contato:</label>
+        <input type="text" name="contact" value="<%= client.contact %>" required>
+        <br>
+        <button type="submit">Atualizar</button>
+    </form>
+    <a href="/">Voltar</a>
+</body>
+</html>
